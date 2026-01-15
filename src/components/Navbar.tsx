@@ -13,12 +13,14 @@ export default function Navbar() {
                         </div>
                         <div className="hidden lg:flex flex-1 justify-end gap-8 items-center">
                             <div className="flex items-center gap-9">
-                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/">Home</Link>
-                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/packages">Packages</Link>
-                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/services">Services</Link>
-                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/about">About Us</Link>
-                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/contact">Contact</Link>
-                            </div>
+                                  {open && (
+                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/" onClick={() => setOpen(false)}>Home</Link>
+                                 )}
+                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/packages"onClick={() => setOpen(false)} > Packages</Link>
+                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/services" onClick={() => setOpen(false)} >Services</Link>
+                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/about" onClick={() => setOpen(false)} >About Us</Link>
+                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/contact" onClick={() => setOpen(false)} >Contact</Link>
+                            </div>    
                           <Button text="Book Now" bgColor="greeny" padding="10px 14px" />
                         </div>
                         <div className="lg:hidden text-[#131811]">
