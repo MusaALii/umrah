@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Button from "./Button";
 export default function Navbar() {
     return (
         <>
@@ -16,7 +17,7 @@ export default function Navbar() {
                                 <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/about">About Us</Link>
                                 <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/contact">Contact</Link>
                             </div>
-                          
+                          <Button/>
                         </div>
                         <div className="lg:hidden text-[#131811]">
                           <img src="./menu.svg" alt="" className="w-7" />
