@@ -16,9 +16,7 @@ export default function Navbar() {
                                 <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/about">About Us</Link>
                                 <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/contact">Contact</Link>
                             </div>
-                            <button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-[#013220] hover:bg-[#3bd60f] transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
-                                <span className="truncate">Book Now</span>
-                            </button>
+                          
                         </div>
                         <div className="lg:hidden text-[#131811]">
                           <img src="./menu.svg" alt="" className="w-7" />
