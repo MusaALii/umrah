@@ -2,34 +2,32 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Button from "./Button";
 export default function Navbar() {
-      const [open, setOpen] = useState(false);
-    return (
-        <>
-            <header className="sticky top-0 z-50 w-full bg-white border-b border-solid border-[#f1f4f0]  shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] ">
-                <div className="container flex justify-center w-full">
-                    <div className="flex container items-center justify-between px-4 lg:px-5 py-3">
-                        <div className="flex items-center gap-4 text-[#131811] dark:text-white">
-                            <h2 className="text-lg font-bold leading-tight tracking-[-0.015em] text-black  ">Umrah Travel</h2>
-                        </div>
-                        <div className="hidden lg:flex flex-1 justify-end gap-8 items-center">
-                            <div className="flex items-center gap-9">
-                                  {open && (
-                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/" onClick={() => setOpen(false)}>Home</Link>
-                                 )}
-                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/packages"onClick={() => setOpen(false)} > Packages</Link>
-                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/services" onClick={() => setOpen(false)} >Services</Link>
-                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/about" onClick={() => setOpen(false)} >About Us</Link>
-                                <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/contact" onClick={() => setOpen(false)} >Contact</Link>
-                            </div>    
-                          <Button text="Book Now" bgColor="greeny" padding="10px 14px" />
-                        </div>
-                        <div className="lg:hidden text-[#131811]">
-                          <img src="./menu.svg" alt="" className="w-7" onClick={() => setOpen(!open)} />
-                        </div>
-                    </div>
-                </div>
-            </header>
+    const [open, setOpen] = useState(false);
 
-        </>
-    )
+    return (
+        <header className="sticky top-0 z-50 w-full bg-white border-b border-[#f1f4f0] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]">
+            <div className="container mx-auto px-4">
+                <div className="flex items-center justify-between py-3">
+                    <h2 className="text-lg font-bold text-black">Umrah Travel</h2>
+                    {open && <div onClick={() => setOpen(false)} className="fixed inset-0 bg-black/40 z-40 lg:hidden"></div>}
+                    <nav className={`fixed top-0 right-0 z-50 h-screen w-[280px] bg-white px-6 pt-24 pb-5 flex flex-col gap-6 transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "translate-x-full"} lg:static lg:h-auto lg:w-auto lg:translate-x-0 lg:flex lg:flex-row lg:items-center lg:gap-8 lg:p-0`}>
+                        <Link to="/" onClick={() => setOpen(false)} className="text-sm font-medium hover:text-primary">Home</Link>
+                        <Link to="/packages" onClick={() => setOpen(false)} className="text-sm font-medium hover:text-primary">Packages</Link>
+                        <Link to="/services" onClick={() => setOpen(false)} className="text-sm font-medium hover:text-primary">Services</Link>
+                        <Link to="/about" onClick={() => setOpen(false)} className="text-sm font-medium hover:text-primary">About Us</Link>
+                        <Link to="/contact" onClick={() => setOpen(false)} className="text-sm font-medium hover:text-primary">Contact</Link>
+                        <Button text="Book Now" bgColor="greeny" padding="10px 14px" />
+                    </nav>
+                    <button onClick={() => setOpen(!open)} className="lg:hidden relative z-50 cursor-pointer">
+                        {open ? (
+                            <img src="./cross-menu.svg" alt="close menu" className="w-7" />
+                        ) : (
+                            <img src="./menu.svg" alt="menu" className="w-7" />
+                        )}
+                    </button>
+
+                </div>
+            </div>
+        </header>
+    );
 }

@@ -53,7 +53,7 @@ export default function Gallery() {
                                 Interactive Tours
                             </h3>
                         </div>
-                        <div className="flex gap-3 mb-6">
+                        <div className="flex flex-wrap gap-3 mb-6">
                             <Button text="all photos" padding="10px 14px" onClick={() => setActive("all")}/>
                             <Button bgColor="greeny" text="Previous Groups" padding="10px 14px"  onClick={() => setActive("group")} />
                             <Button bgColor="greeny" text="Hotels" padding="10px 14px"  onClick={() => setActive("hotel")} />

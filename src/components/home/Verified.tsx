@@ -2,8 +2,8 @@ export default function Varified() {
     return (
         <>
             <div className="relative  z-20 -mt-16 mx-auto   mb-10">
-                <div className="layout-container flex justify-center">
-                    <div className="w-full max-w-[1080px] bg-white dark:bg-[#1e2e1a] rounded-2xl shadow-xl p-6 border border-[#f1f4f0] dark:border-[#2a3825] py-10 ">
+                <div className="container flex justify-center px-5">
+                    <div className="w-full max-w-[1080px] bg-white px-5 dark:bg-[#1e2e1a] rounded-2xl shadow-xl p-6 border border-[#f1f4f0] dark:border-[#2a3825] py-10 ">
                         <form className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
                             <label className="flex flex-col gap-2">
                                 <span className="text-[#131811] dark:text-gray-200 text-sm font-semibold">Departure City</span>

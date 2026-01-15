@@ -112,7 +112,7 @@ export default function Accordians() {
     return (
         <>
              <div className="bg-[#e8e8e8] py-10">
-                <div className="flex flex-col gap-6  container mx-auto">
+                <div className="flex flex-col gap-6 px-5 container mx-auto">
                     <h3 className="text-xl font-bold text-[#131811] ">Browse by Category</h3>
                     <div className="flex gap-3 flex-wrap mb-5">
                         <Button text="All" padding="7px 10px" onClick={() => setActive("all")} />
