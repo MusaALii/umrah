@@ -17,7 +17,7 @@ export default function Navbar() {
                                 <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/about">About Us</Link>
                                 <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/contact">Contact</Link>
                             </div>
-                          <Button/>
+                          <Button text="Book Now" bgColor="greeny" padding="10px 14px"/>
                         </div>
                         <div className="lg:hidden text-[#131811]">
                           <img src="./menu.svg" alt="" className="w-7" />
