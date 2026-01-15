@@ -20,7 +20,7 @@ export default function Navbar() {
                                 <span className="truncate">Book Now</span>
                             </button>
                         </div>
-                        <div className="lg:hidden text-[#131811] dark:text-white">
+                        <div className="lg:hidden text-[#131811]">
                           <img src="./menu.svg" alt="" className="w-7" />
                         </div>
                     </div>
