@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Button from "./Button";
 export default function Navbar() {
+      const [open, setOpen] = useState(false);
     return (
         <>
             <header className="sticky top-0 z-50 w-full bg-white border-b border-solid border-[#f1f4f0]  shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] ">
@@ -17,7 +19,7 @@ export default function Navbar() {
                                 <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/about">About Us</Link>
                                 <Link className="text-[#131811] dark:text-back text-sm font-medium hover:text-primary transition-colors" to="/contact">Contact</Link>
                             </div>
-                          <Button text="Book Now" bgColor="greeny" padding="10px 14px"/>
+                          <Button text="Book Now" bgColor="greeny" padding="10px 14px"  onClick={() => setOpen(!open)}/>
                         </div>
                         <div className="lg:hidden text-[#131811]">
                           <img src="./menu.svg" alt="" className="w-7" />
