@@ -21,7 +21,7 @@ export default function Navbar() {
                             </button>
                         </div>
                         <div className="lg:hidden text-[#131811] dark:text-white">
-                            <span className="material-symbols-outlined cursor-pointer">menu</span>
+                          <img src="./menu.svg" alt="" className="w-7" />
                         </div>
                     </div>
                 </div>
