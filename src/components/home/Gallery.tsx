@@ -4,7 +4,6 @@ import "yet-another-react-lightbox/styles.css";
 export default function Gallery() {
     const [open, setOpen] = useState(false);
     const [index, setIndex] = useState(0);
-    const [active, setActive] = useState("all");
 
     const gallery = [
         { src: "/gal-1.png", group: "Group 1", title: "Arrival at Makkah" },
