@@ -11,6 +11,7 @@ import GallerySection from "./components/pages/GallerySection";
 import JourneySection from "./components/pages/JourneySection";
 import TestimonilasSection from "./components/pages/TestimonialsSection";
 
+
 function App() {
   return (
     <>

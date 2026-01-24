@@ -17,7 +17,7 @@ export default function Reviews() {
             rateicon: "./stars.svg",
             content: "Everything was perfectly organized. The bus was comfortable and the hotels were amazing.",
             name: "Brother Yousuf",
-             circlebg: "./mirrorhotel.png"
+            circlebg: "./mirrorhotel.png"
         },
         {
             mainimg: "./nightview.png",
@@ -61,9 +61,8 @@ export default function Reviews() {
     ];
 
     const [active, setActive] = useState("all");
-
-    const filteredItems = active === "all" ? items : items.filter(item => item.Catogery === active); 
-
+    
+    const filteredItems = active === "all" ? items : items.filter(item => item.Catogery === active);
     return (
         <>
             <div className="w-full bg-background-light dark:bg-[#ededed] py-12 md:py-20">
@@ -102,7 +101,7 @@ export default function Reviews() {
                                 </div>
                             ))}
                         </div>
-                       
+
                     </div>
                 </div>
             </div>

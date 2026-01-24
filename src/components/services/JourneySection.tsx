@@ -15,7 +15,7 @@ export default function JourneySection() {
                                 <p className="text-gray-300">Contact our team today for a custom quote tailored to your specific
                                     needs and dates.</p>
                             </div>
-                            <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                            <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto items-center">
                               <Button text="Whatsapp US" href="https://wa.me/923001234567?text=Hello"  padding="7px 14px" iconSrc="chat.svg"/>
                                <Button text="Custom Quote" padding="10px 14px"/>
                                

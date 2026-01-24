@@ -102,8 +102,6 @@ export default function Accordians() {
             content: "Currently, the Kingdom has lifted most COVID-19 restrictions. Proof of vaccination is generally not required for entry, but we always recommend carrying your vaccination record. Wearing masks in the Grand Mosque is optional but encouraged during crowded times.",
             catogery: "booking"
         },
-
-
     ];
     const [active, setActive] = useState("all");
 
@@ -128,7 +126,7 @@ export default function Accordians() {
                             <h4 className="text-sm uppercase tracking-wider text-black font-bold mt-2 mb-1">Visa &amp; Documentation</h4>
                             {filteredAccordians.map(Accordians =>
                                 <details className="flex flex-col rounded-xl border border-[#dee6db] dark:border-[#2a3c26] text-black dark:bg-[#ffffff] overflow-hidden group shadow-sm">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-6 px-6 py-5 bg-white  hover:bg-gray-50 dark:hover:bg-[#23351d] hover:text-white transition-colors">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-6 px-6 py-5 bg-white  hover:bg-gray-50 dark:hover:bg-[#c0c2bf] hover:text-white transition-colors">
                                         <p className="text-[#131811] text-base font-semibold">{Accordians.title}</p>
                                         <span className="material-symbols-outlined text-[#131811] dark:text-white group-open:rotate-180 group-open:text-primary transition-transform duration-300"><img src={Accordians.icon} alt="" className="w-5 h-5 rotate-90" /></span>
                                     </summary>

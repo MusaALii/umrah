@@ -4,7 +4,6 @@ import "yet-another-react-lightbox/styles.css";
 import Button from "../Button";
 
 export default function Gallery() {
-
     const [open, setOpen] = useState(false);
     const [index, setIndex] = useState(0);
     const [active, setActive] = useState("all");
@@ -72,8 +71,6 @@ export default function Gallery() {
                             </div>
                         ))}
                     </div>
-                   
-               
             </div>
             <Lightbox
                 open={open}

@@ -3,7 +3,6 @@ import { useState } from "react";
 import Button from "./Button";
 export default function Navbar() {
     const [open, setOpen] = useState(false);
-
     return (
         <header className="sticky top-0 z-50 w-full bg-white border-b border-[#f1f4f0] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]">
             <div className="container mx-auto px-4">
@@ -25,7 +24,6 @@ export default function Navbar() {
                             <img src="./menu.svg" alt="menu" className="w-7" />
                         )}
                     </button>
-
                 </div>
             </div>
         </header>

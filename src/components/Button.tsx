@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-
 type ButtonProps = {
   text?: string;
   href?: string;
   iconSrc?: string;
   bgColor?: string;
   padding?: string;
-  onClick?: () => void; // ✅ add onClick
+  onClick?: () => void;
 };
 
 export default function Button({
@@ -15,9 +14,8 @@ export default function Button({
   iconSrc,
   bgColor,
   padding,
-  onClick, // ✅ receive onClick
+  onClick, // 
 }: ButtonProps) {
-  // If onClick is provided, render a button, else Link
   if (onClick) {
     return (
       <button

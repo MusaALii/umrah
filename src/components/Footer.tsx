@@ -68,9 +68,9 @@ export default function Footer() {
                             className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-black">
                             <p>© 2024 Umrah Travel. All rights reserved.</p>
                             <div className="flex gap-4">
-                                <Link className="hover:text-white" to="#">Facebook</Link>
-                                <Link className="hover:text-white" to="#">Twitter</Link>
-                                <Link className="hover:text-white" to="#">Instagram</Link>
+                                <Link className="hover:text-black font-normal" to="#">Twitter</Link>
+                                <Link className="hover:text-black" to="#">Facebook</Link>
+                                <Link className="hover:text-black" to="#">Instagram</Link>
                             </div>
                         </div>
                     </div>
